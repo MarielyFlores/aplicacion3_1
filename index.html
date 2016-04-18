@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Tersera Aplicacion </title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/2.jpg','imagenes/7.jpg','imagenes/9.jpg','imagenes/10.jpg','imagenes/18.jpg')">
+
+<div data-role="page" id="principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+     <h1><center> INFORMACIÓN DE EL VOLCÁN POPOCATEPETL </center></h1>
+   </div>
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Popocatepetl </h1>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('popocatepetl','','imagenes/2.jpg',1)"><img src="imagenes/1.jpg" width="646" height="350" id="popocatepetl"></a>
+       </div>
+       </div>
+   
+       
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Ubicación </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Tamaño </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Antigüedad </h2>
+    <p> clic para mas informacion </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Historia </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Actividad Volcanica </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Medidas Preventivas </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Zonas de Riesgo </h2>
+    <p> clic para mas informacion </p>
+      </a>
+    </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4> Aplicacion Tres </h4>
+     <h4> Mariely Flores Flores </h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Ubicación </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+       <h3> El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’ 'popoca, humear; tepetl, cerro’); es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala. </h3>
+       <img src="imagenes/3.jpg" width="50%" height="50%">
+       <h3>  Está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar. </h3>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>Aplicacion Tres, MFF</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Tamaño </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tamavol','','imagenes/10.jpg',1)"><img src="imagenes/4.JPG" width="646" height="350" id="tamavol"></a>
+<h2> Cubre una superficie de 283,192.53 hectáreas y tiene una altura de 5,426 metros sobre el nivel del mar.</h2>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tamaño','','imagenes/9.jpg',1)"><img src="imagenes/5.jpg" width="646" height="350" id="tamaño"></a>
+<h2> Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro mayor de 900 metros y un ancho total de 400 x 600 metros. </h2>
+       </div>
+    </div>
+  <div data-role="footer" data-theme="a">
+    <h4> Aplicacion Tres, MFF </h4>
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Antigüedad </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+       <h2> El Popocatépetl es un volcán geológicamente joven. Se cree que tiene unos 730,000 años de antigüedad y que es remanente de volcanes antiguos que colapsaron. Tuvo su origen durante el Pleistoceno tardío-Holoceno, después del derrumbe de El Fraile. </h2>
+       <img src="imagenes/8.jpg" width="50%" height="50%">        <h2>Su historia comenzó con la formación del volcán Nexpayantla a través de la expulsión de flujos de lava andesítica y dacítica. </h2>
+       </div>
+    </div>
+  <div data-role="footer" data-theme="a">
+    <h4> Aplicacion Tres, MFF </h4>
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Leyenda del Popocatepetl </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+       <h3> La leyenda de los volcanes nos cuenta la historia de un amor conformado por la princesa Iztaccíhuatl y el guerrero de su padre llamado Popocatépetl, él la amaba con locura, por eso el rey de la tribu le ordenó ir a una guerra y terminar con la vida del enemigo, algo que era totalmente imposible, pero si pudiera hacer este pedido su hija estaría libre para casarse con el amado, él regresó con lo que se le había encargado y todos celebraron aquel día.<br>
+En un momento Popocatépetl se da cuenta que Iztaccíhuatl estaba muerta, por eso es que la lleva hacia el monte donde los Dioses la convirtieron en un volcán inactivo, en ese momento él prendió una antorcha y tenía el corazón roto por su amor perdido, los Dioses se conmovieron de ellos y decidieron convertirlo en otro volcán que hasta el fin de sus días estaría cuidando a su princesa para que por lo menos en la muerte estén unidos. </h3>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('leyenda','','imagenes/7.jpg',1)"><img src="imagenes/6.jpg" width="646" height="350" id="leyenda"></a>
+     </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+  <h4> Aplicacion Tres, MFF </h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Actividad Volcanica </h1>
+    </div>
+     <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:54%;height:100%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  <div data-role="content" align="center">
+    <div>
+       <h3> El Popocatépetl es conocido por sus alta actividad volcánica, que se presenta comúnmente. Desde que se reactivó, en 1997, hasta el momento, ha presentado una serie de erupciones de las cuales la más violenta ha sido la del año 2000, y la última la noche del 4 y madrugada del 5 de noviembre de 2014. </h3> 
+     </div>
+  </div>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Monitoreo </h1>
+         <div>
+         <h3> El volcán es uno de los más monitoreados del mundo y también es uno de los más peligrosos y que amenaza más de 26 millones de personas. La única manera de percibir y evaluar el estado de actividad y riesgo, es a través de la observación y vigilancia sistemática de diversos métodos visuales e instrumentales. Si se aplican en forma anticipada en las fases previas a un proceso eruptivo, es posible detectar un cambio cualitativo y cuantitativo de la actividad. </h3>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('monitoreo','','imagenes/18.jpg',1)"><img src="imagenes/17.jpg" width="646" height="350" id="monitoreo"></a> 
+   </div>
+       </div>
+       </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+  <h4> Aplicacion Tres, MFF </h4>
+  </div>
+ </div>
+ </div>
+
+<div data-role="page" id="pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Medidas Preventivas </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+    <img src="imagenes/19.jpg" width="50%" height="50%">
+       <h2> - Cerrar depósitos de agua. <br>
+- Proteger ojos, nariz y bocaya que ésta puede provocar afectaciones al sistema respiratorio. </h2>
+     </div>
+   </div>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Caída de Ceniza Volcanica </h1>
+         <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow1.html" style="width:58%;height:100%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+         <div>
+         <h3> **No humedecer la ceniza<br> **Mantén la calma<br> **Utiliza medios electrónicos y de comunicación para obtener información<br> **No realices actividades al aire libre y si es posible no salgas<br> **Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas </h3>
+   </div>
+       </div>
+       </div>
+       <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Erupción Volcanica </h1>
+         <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow2.html" style="width:100%;height:100%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+         <div>
+         <h3> **Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio que funcione con pilas<br> **Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno<br> **Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro<br> **Evita zonas de ríos y regiones bajas<br> **Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos </h3>
+       </div>
+       </div>   
+   </div>
+ <div data-role="footer" data-theme="a">
+  <h4> Aplicacion Tres, MFF </h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Zonas de Riesgo </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+    <img src="imagenes/30.jpg" width="50%" height="50%">
+       <h4> Se dividen en 3 secciones:</h4>
+       <h3>*ZONA DE PELIGRO MAYOR:</h3>
+       <h4>**Xalizintla, San Nicolas de los Ranchos<br>
+       **San Nicolas de los Ranchos<br>
+       **San Pedro Benito Juarez</h4>
+       <h3>*ZONA DE PELIGRO MODERADO:</h3>
+       <h4>**Nealtican<br>
+       **San Jeronimo<br>
+       **Atlixco</h4>
+       <h3>*ZONA DE PELIGRO MENOR:</h3>
+       <h4>**San Pedro Cholula<br>
+       **Izucar de Matamoros</h4>
+     </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+  <h4> Aplicacion Tres, MFF </h4>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>
